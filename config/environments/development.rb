@@ -39,6 +39,6 @@ Rails.application.configure do
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
   
-  config.action_mailer.default_url_options = { host: ENV['IP'], port: ENV['PORT'] }
+  config.action_mailer.default_url_options = { host: 'blocitoff-gitbnw.c9users.io', port: 8080 }
   
 end
