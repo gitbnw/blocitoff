@@ -17,6 +17,16 @@
   )    
   user.skip_confirmation!
   user.save!
+
+  10.times do
+    
+    item = Item.new(
+      :name => Faker::Lorem.sentence,
+      :user => user
+      )
+    item.save!
+  end
+  
 end
   user = User.new(
   :name => 'Byron Weiss',
@@ -26,7 +36,16 @@ end
   )
   user.skip_confirmation!
   user.save!
-
+  
+  10.times do
+    
+    item = Item.new(
+      :name => Faker::Lorem.sentence,
+      :user => user
+      )
+    item.save!
+  end
+  
    user = User.new(
   :name => 'Byron Weiss',
   :email => 'bweiss@oak-park.us',
@@ -35,5 +54,17 @@ end
   )
   user.skip_confirmation!
   user.save!
+  
+  10.times do
+    
+    item = Item.new(
+      :name => Faker::Lorem.sentence,
+      :user => user
+      )
+    item.save!
+    
+  end
+
 
  puts "#{User.count} users created"
+ puts "#{Item.count} items created"
