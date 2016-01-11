@@ -5,6 +5,10 @@ Rails.application.routes.draw do
   
   root to: "welcome#index"
   
-  resources :users, only: [:update, :show]
+  resources :users, only: [:update, :show] do
+  
+    resources :items, only: [:create, :new]
+    
+  end
   
 end
