@@ -5,9 +5,13 @@ Rails.application.routes.draw do
   
   root to: "welcome#index"
   
-  resources :users, only: [:update, :show] do
-  
-    resources :items, only: [:create, :new]
+  resources :users, only: [:show] do
+
+    resources :items, only: [:create, :new, :delete, :destroy] do
+
+      put 'complete'
+
+    end
     
   end
   

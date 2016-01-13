@@ -1,0 +1,6 @@
+ <% if @item.complete? %>
+   $('#item-'+<%= @item.id %>).toggleClass( "completed" );
+ <% else %>
+
+   $('.flash').prepend("<div class='alert alert-danger'><button type='button' class='close' data-dismiss='alert'>&times;</button><%= flash.now[:alert] %></div>");
+ <% end %>
