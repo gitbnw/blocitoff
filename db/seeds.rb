@@ -44,7 +44,7 @@ end
       :user => user
       )
     item.save!
-    item.update_attribute("created_at", Date.today - rand(6))
+    item.update_attribute("created_at", Date.today - rand(5..10))
   end
   
    user = User.new(

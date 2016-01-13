@@ -61,6 +61,9 @@ GEM
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
     diff-lcs (1.2.5)
+    dotiw (3.0.1)
+      actionpack (>= 3)
+      i18n
     erubis (2.7.0)
     execjs (2.6.0)
     factory_girl (4.5.0)
@@ -191,6 +194,7 @@ DEPENDENCIES
   bootstrap-sass
   coffee-rails (~> 4.1.0)
   devise
+  dotiw
   factory_girl_rails (~> 4.0)
   factory_girl_rspec
   faker

@@ -39,3 +39,5 @@
  gem 'figaro'
  
  gem 'faker'
+ 
+ gem 'dotiw'
