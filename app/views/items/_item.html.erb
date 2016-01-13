@@ -3,7 +3,7 @@
 <%= content_tag :div, class: 'media', id: "item-#{item.id}" do %>
     <li class="items">
         <%= link_to "", user_item_complete_path(@user.id, item.id), method: :put, class: 'glyphicon glyphicon-ok text-success', remote: true %>    
-        <%= item.name %>
+        <%= item.name %> (expires in: <%= distance_of_time_in_words(item.created_at + 7.days, Date.today) %>)
         <%= link_to "", [@user, item], method: :delete, class: 'glyphicon glyphicon-remove text-danger', remote: true %>
     </li>
     <% end %> 

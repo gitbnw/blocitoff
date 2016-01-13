@@ -19,7 +19,7 @@
   user.save!
 
   10.times do
-    
+ 
     item = Item.new(
       :name => Faker::Lorem.sentence,
       :user => user
@@ -44,6 +44,7 @@ end
       :user => user
       )
     item.save!
+    item.update_attribute("created_at", Date.today - rand(6))
   end
   
    user = User.new(
