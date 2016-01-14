@@ -41,3 +41,7 @@
  gem 'faker'
  
  gem 'dotiw'
+ 
+ gem 'whenever', :require => false
+ 
+ gem 'pundit'
