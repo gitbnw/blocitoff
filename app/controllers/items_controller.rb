@@ -45,9 +45,13 @@ before_action :authenticate_user!
      
  end
  
-def complete
+def status
   @item = Item.find(params[:item_id])
-  @item.status = 1
+  if @item.status == 1
+      @item.status = 0
+  else
+      @item.status = 1
+  end
   @user = current_user
 
      if @item.save
@@ -64,6 +68,7 @@ def complete
      end
      
 end
+
  
  def update
      

@@ -21,7 +21,7 @@
   10.times do
  
     item = Item.new(
-      :name => Faker::Lorem.sentence,
+      :name => Faker::Hipster.sentence(3),
       :user => user
       )
     item.save!
@@ -40,7 +40,7 @@ end
   10.times do
     
     item = Item.new(
-      :name => Faker::Lorem.sentence,
+      :name => Faker::Hipster.sentence(3),
       :user => user
       )
     item.save!
@@ -59,7 +59,7 @@ end
   10.times do
     
     item = Item.new(
-      :name => Faker::Lorem.sentence,
+      :name => Faker::Hipster.sentence(3),
       :user => user
       )
     item.save!

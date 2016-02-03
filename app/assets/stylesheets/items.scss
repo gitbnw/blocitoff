@@ -10,7 +10,17 @@
     list-style-type: none;
 }
 
-.completed {
+span.completed {
     text-decoration: line-through;
     opacity: 0.5;
 }
+
+a.icon.completed:before {
+  font-family: 'Glyphicons Halflings';
+  content:"\e013";
+} 
+
+a.icon:before {
+  font-family: 'Glyphicons Halflings';
+  content:"\e157";
+} 
